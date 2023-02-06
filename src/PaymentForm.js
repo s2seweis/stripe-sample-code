@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 // import { IdealBankElement } from '@stripe/react-stripe-js';

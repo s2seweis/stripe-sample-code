@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { BrowserRouter as Switch, Route } from 'react-router-dom'
 import PaymentForm from './PaymentForm'

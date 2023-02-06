@@ -9,11 +9,13 @@ import {
   useElements
 } from "@stripe/react-stripe-js";
 
-export default function CheckoutForm() {
+const CheckoutForm = () => {
+
   const stripe = useStripe();
   const elements = useElements();
 
   const [email, setEmail] = useState('');
+  // console.log(email);
   const [message, setMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -104,3 +106,6 @@ export default function CheckoutForm() {
     </form>
   );
 }
+
+
+export default withRouter(CheckoutForm);
